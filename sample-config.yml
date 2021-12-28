@@ -1,0 +1,13 @@
+
+# Loopia API user credentials (get it at Kundzon > LoopiaAPI)
+username: 'myusername@loopiaapi'
+password: 'mypassword'
+
+domain: 'mindoman.se'
+subdomain: '@'
+ttl: '300' # optional, defaults to 3600
+
+# Log settings
+log_level_console: 10
+log_level_file: 0 # 0 disables logging to the file application.log
+
