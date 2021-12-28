@@ -10,7 +10,7 @@ not liable for any missuse.
 """
 __author__ = "Jonas Werme"
 __copyright__ = "Copyright (c) 2021 Jonas Werme"
-__credits__ = []
+__credits__ = ["nsahq"]
 __license__ = "MIT"
 __version__ = "1.0.0"
 __maintainer__ = "Jonas Werme"
@@ -31,11 +31,12 @@ def get_logger(
     Creates and returns a logger instance as per hoofbite style guides.
 
     Turn off console or file logging by setting the corresponding log level to 0.
+    Log levels are integers in the range of 0-50 in increments by 10.
 
     Arguments:
         name {string} -- Logger name. Defaults to calling modules __name__ property.
-        log_level_console {int} -- Log level for console logging. 0-50 in increments by 10. Defaults to 20 (logging.INFO).
-        log_level_file {int} -- Log level for file logging. 0-50 in increments by 10. Defaults to 20 (logging.INFO).
+        log_level_console {int} -- Log level for console logging. Defaults to 20 (logging.INFO).
+        log_level_file {int} -- Log level for file logging. Defaults to 20 (logging.INFO).
         log_file {string} -- Path to log file. Defaults to application.log.
 
     Returns:
