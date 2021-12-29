@@ -182,10 +182,10 @@ if __name__ == "__main__":
                     log.critical("Unable to create record, exiting")
                     exit(2)
 
-                if update_record(cfg, new_ip, a_records[0]):
-                    log.info(f"Updated the A record for {new_ip} in {fqdn}")
-                else:
-                    log.info("Already up to date")
+            if update_record(cfg, new_ip, a_records[0]):
+                log.info(f"Updated the A record for {new_ip} in {fqdn}")
+            else:
+                log.info("Already up to date")
         except Exception as e:
             log.critical(e)
             raise
